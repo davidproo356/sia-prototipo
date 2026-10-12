@@ -1,0 +1,61 @@
+# Variables y secretos
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+
+# Editores
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Node.js, Expo y Android
+node_modules/
+.expo/
+.expo-shared/
+dist/
+build/
+android/.gradle/
+android/build/
+ios/Pods/
+*.apk
+*.aab
+*.ipa
+
+# Java
+target/
+*.class
+*.jar
+*.war
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Datos y modelos no versionados
+ai/models/*
+!ai/models/README.md
+ai/datasets/*
+!ai/datasets/README.md
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.h5
+*.sqlite
+*.db
+*.log
+coverage/

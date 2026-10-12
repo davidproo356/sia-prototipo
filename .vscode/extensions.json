@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "ms-python.python",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}

@@ -1,0 +1,30 @@
+name: Validación de estructura y configuración
+
+on: [push, pull_request]
+
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar archivos esenciales
+        run: |
+          test -f README.md
+          test -f .env.example
+          test -f docker-compose.yml
+          test -f backend/Dockerfile
+          test -f ai/Dockerfile
+          test -f mobile/package.json
+          test -f docs/arquitectura.md
+      - name: Revisar configuración de Compose sin iniciar aplicaciones
+        run: |
+          cp .env.example .env
+          docker compose config --quiet
+          rm .env
+      - name: Validar JSON
+        run: |
+          python3 -m json.tool mobile/package.json >/dev/null
+          python3 -m json.tool mobile/app.json >/dev/null
+          python3 -m json.tool mobile/tsconfig.json >/dev/null
+          python3 -m json.tool .vscode/extensions.json >/dev/null
+# Las pruebas de Java, Python y app móvil se añadirán cuando exista código.

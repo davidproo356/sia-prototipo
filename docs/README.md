@@ -1,7 +1,15 @@
-# Documentación SIA — prototipo
+# Guías para los integrantes del proyecto
 
-Este directorio reúne las decisiones de arquitectura, alcance, herramientas, configuración y normas de colaboración del equipo.
+Este directorio concentra las decisiones técnicas. Empieza por:
+- [Alcance](alcance.md) — qué es y qué no es el prototipo.
+- [Arquitectura](arquitectura.md) — cómo se relacionan los componentes.
+- [Herramientas](herramientas.md) — programas por responsabilidad.
+- [Docker](docker.md) — configuración local y limitaciones.
+- [GitHub](github.md) — flujo de ramas y PR.
+- [Primeras tareas](primeras-tareas.md) — posible distribución entre 3.
+- [Contrato API](api-contrato.md) — intercambios de datos futuros.
+- [Referencias](referencias.md) — proyectos externos por estudiar.
+- [Seguridad y accesibilidad](seguridad-accesibilidad.md) — riesgos del caso.
+- [ADR-0001](decisiones/ADR-0001-stack.md) — justificación del stack inicial.
 
-**Estado:** preparación de estructura. La aplicación móvil, backend y reconocimiento por IA todavía no están implementados.
-
-Consulta también el README de la raíz para conocer los módulos.
+**Todo describe lo propuesto, no características ya construidas.**

@@ -1,0 +1,5 @@
+# Dependencias preliminares. Validar versiones y congelar lock al implementar.
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic==2.11.3
+# Añadir dependencias YOLO/OCR tras revisar modelos, licencias y pruebas.
